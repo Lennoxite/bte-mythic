@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityLaserInfo.cs" />
     <Compile Include="AurumUtility.cs" />
     <Compile Include="BTEMY_GeneDefOf.cs" />
     <Compile Include="BTEMY_HediffDefOf.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="HediffCompProperties_SeverityFromAurum.cs" />
     <Compile Include="HediffComp_SeverityFromAurum.cs" />
     <Compile Include="IngestionOutcomeDoer_OffsetAurum.cs" />
+    <Compile Include="JobDriver_CastAbilityChannelStaticLaser.cs" />
     <Compile Include="JobGiver_GetAurum.cs" />
     <Compile Include="Recipe_AurumInjection.cs" />
     <Compile Include="StartUp.cs" />

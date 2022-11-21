@@ -4,13 +4,13 @@
 
   <GeneCategoryDef>
     <defName>BTEMy_Glintscale</defName>
-    <label>glintscale</label>
-    <displayPriorityInXenotype>532</displayPriorityInXenotype>
+    <label>Biotech Expansion - Mythic - Glintscale</label>
+    <displayPriorityInXenotype>534</displayPriorityInXenotype>
   </GeneCategoryDef>
     <GeneCategoryDef>
     <defName>BTEMy_Ashfeather</defName>
-    <label>ashfeather</label>
-    <displayPriorityInXenotype>533</displayPriorityInXenotype>
+    <label>Biotech Expansion - Mythic - Ashfeather</label>
+    <displayPriorityInXenotype>535</displayPriorityInXenotype>
   </GeneCategoryDef>
 
 </Defs>

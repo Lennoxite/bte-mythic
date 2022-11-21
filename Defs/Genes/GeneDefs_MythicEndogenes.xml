@@ -42,8 +42,7 @@
       <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
       <useSkinShader>true</useSkinShader>
 	  <drawScale>1</drawScale>
-	  <!--<drawOffsetEast>(0.26, 0, -0.125)</drawOffsetEast>
-	  <drawOffsetSouth>(-0.01, 0, -0.13)</drawOffsetSouth>-->
+	  <drawOffsetSouth>(0, 0, -0.05)</drawOffsetSouth>
       <layer>PostSkin</layer>
     </graphicData>
     <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
@@ -103,7 +102,7 @@
 	  <color>(255, 255, 255)</color>
 	  <layer>PostHeadgear</layer>
 	  <drawOffsetEast>(0, 0, -0.1)</drawOffsetEast>
-	  <drawOffsetSouth>(0, -1, -0.1)</drawOffsetSouth>
+	  <drawOffsetSouth>(0, -0.2, -0.1)</drawOffsetSouth>
 	  <drawOffsetNorth>(0, 1, -0.1)</drawOffsetNorth>
 	  <visibleNorth>true</visibleNorth>
 	</graphicData>
