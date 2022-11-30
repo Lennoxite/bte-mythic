@@ -148,4 +148,169 @@
       </li>
     </comps>
   </HediffDef>
+  
+  <HediffDef>
+    <defName>BTEMy_BlessingCelerity</defName>
+    <label>blessing of celerity</label>
+    <description>Blessed with speed and dodge chance.</description>
+    <defaultLabelColor>(0.3, 0.6, 1)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>blessed</label>
+		  <capMods>
+			<li>
+			  <capacity>Moving</capacity>
+			  <offset>0.25</offset>
+			</li>
+		  </capMods>
+		  <statOffsets>
+			<MeleeDodgeChance>20</MeleeDodgeChance>
+		  </statOffsets>
+        <statFactors>
+          <PawnTrapSpringChance>0</PawnTrapSpringChance>
+        </statFactors>
+<!-- 		  <statFactors>
+			<li>
+			<stat>PawnTrapSpringChance</stat>
+			<value>0</value>
+			</li>
+		  </statFactors> -->
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>BTEMy_CurseSluggish</defName>
+    <label>curse of sluggishness</label>
+    <description>Cursed with slowness in the arms and legs. Melee damage is also reduced and firing ranged weapons take longer to recover from.</description>
+    <defaultLabelColor>(0.6, 0.6, 0.3)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>cursed</label>
+		  <capMods>
+			<li>
+			  <capacity>Moving</capacity>
+			  <offset>-0.25</offset>
+			</li>
+			<li>
+			  <capacity>Manipulation</capacity>
+			  <offset>-0.25</offset>
+			</li>
+		  </capMods>
+		  <statOffsets>
+			<MeleeDamageFactor>-0.25</MeleeDamageFactor>
+			<RangedCooldownFactor>0.25</RangedCooldownFactor>
+		  </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>BTEMy_CursePain</defName>
+    <label>curse of pain</label>
+    <description>Cursed with increased pain and damage.</description>
+    <defaultLabelColor>(0.5, 0, 0)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>cursed</label>
+		 <painFactor>1.5</painFactor>
+		  <statOffsets>
+			<IncomingDamageFactor>0.25</IncomingDamageFactor>
+		  </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>BTEMy_ReveredDesire</defName>
+    <label>reverence starvation</label>
+    <description>Without any psychic energy from others, this person's ability to affect material objects is fading rapidly.</description>
+    <hediffClass>Hediff_HemogenCraving</hediffClass>
+    <defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>minor</label>
+        <painOffset>0.05</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.95</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.95</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>moderate</label>
+        <minSeverity>0.35</minSeverity>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.75</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.75</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>major</label>
+        <minSeverity>0.7</minSeverity>
+        <painOffset>0.15</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.5</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.5</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="BTE_MY.HediffCompProperties_SeverityFromReverence">
+        <severityPerHourEmpty>0.05</severityPerHourEmpty>
+        <severityPerHourReverence>-0.1</severityPerHourReverence>
+      </li>
+    </comps>
+  </HediffDef>
 </Defs>

@@ -7,6 +7,7 @@
 	  <value>
 
             <li Class="BTE_MY.JobGiver_GetAurum" MayRequire="Ludeon.RimWorld.Biotech"/>
+            <li Class="BTE_MY.JobGiver_GetReverence" MayRequire="Ludeon.RimWorld.Biotech"/>
 	  </value>
 	  </li>
 	  <li Class="PatchOperationInsert">
@@ -14,14 +15,29 @@
 	  <value>
 
             <li Class="BTE_MY.JobGiver_GetAurum" MayRequire="Ludeon.RimWorld.Biotech"/>
+            <li Class="BTE_MY.JobGiver_GetReverence" MayRequire="Ludeon.RimWorld.Biotech"/>
 	  </value>
 	  </li>
-	  <li Class="PatchOperationInsert">
+<!-- 	  <li Class="PatchOperationInsert">
 	  <xpath>Defs/ThingDef[defName="Human"]/recipes/li[6]</xpath>
 	  <value>
 		<li>BTEMy_AurumInjection</li>
 	  </value>
 	  </li>
+	  <li Class="PatchOperationInsert">
+	  <xpath>Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li[1]/subNodes/li[8]</xpath>
+	  <value>
+
+            <li Class="BTE_MY.JobGiver_GetReverence" MayRequire="Ludeon.RimWorld.Biotech"/>
+	  </value>
+	  </li>
+	  <li Class="PatchOperationInsert">
+	  <xpath>Defs/ThinkTreeDef[defName="Humanlike"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalPrisoner"]/subNodes/li[5]/subNodes/li[@Class="ThinkNode_PrioritySorter"]/subNodes/li[@Class="JobGiver_GetHemogen"]</xpath>
+	  <value>
+
+            <li Class="BTE_MY.JobGiver_GetReverence" MayRequire="Ludeon.RimWorld.Biotech"/>
+	  </value>
+	  </li> -->
 	 </operations>
 	</Operation>
 

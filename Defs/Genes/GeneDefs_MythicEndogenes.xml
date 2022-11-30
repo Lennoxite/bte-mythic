@@ -14,6 +14,7 @@
       <li>0.75</li>
     </resourceGizmoThresholds>
     <showGizmoOnWorldView>true</showGizmoOnWorldView>
+    <showGizmoWhenDrafted>true</showGizmoWhenDrafted>
     <resourceDescription>A second circulatory system that powers a swarm of ultra conductive mechanites called aurum. These mechanites can perform electric and pyrotechnic feats and can augment the physical body, but requires precious metals like silver and gold to sustain. These must be ground down in a crafting spot to be consumed.\n\nCarriers lose 2 aurum per day from wear and tear. If aurum reaches zero, {PAWN_nameDef} will become very unhappy.</resourceDescription>
     <iconPath>Genes/Icons/BTEMy_AurumThirstIcon</iconPath>
     <selectionWeight>0</selectionWeight>
@@ -354,4 +355,75 @@
     <biostatCpx>0</biostatCpx>
     <biostatMet>0</biostatMet>
   </GeneDef>
+  
+<!--TAILBINDER-->
+  <GeneDef>
+    <defName>BTEMy_ReveredEmbodiment</defName>
+    <label>revered embodiment</label>
+    <description>Carriers of this gene have their consciousness partially displaced from their brain, forming a psychically maintained out of body nervous system. This grants the carrier extreme psychic abilities at the cost of making them dependent on feeding on the psychic patterns of other people, often through worship and voluntary (or not) offerings of psychic energy. These energies can be harvested from people meditating near a revered totem and condensed into revered motes.\n\nOne meditating person can generate a revered mote every 8 hours.</description>
+    <geneClass>BTE_MY.Gene_Reverence</geneClass>
+    <resourceGizmoType>BTE_MY.GeneGizmo_ResourceReverence</resourceGizmoType>
+    <resourceLabel>reverence</resourceLabel>
+    <resourceGizmoThresholds>
+      <li>0.25</li>
+      <li>0.5</li>
+      <li>0.75</li>
+    </resourceGizmoThresholds>
+    <showGizmoOnWorldView>true</showGizmoOnWorldView>
+    <showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+    <resourceDescription>The consciousness of the person is partially displaced from the brain, forming a psychically maintained out of body nervous system. This grants the person extreme psychic abilities at the cost of making them dependent on feeding on the psychic patterns of other people. These energies can be harvested from people meditating near a revered totem.</resourceDescription>
+    <iconPath>Genes/Icons/BTEMy_ReveredEmbodimentIcon</iconPath>
+    <selectionWeight>0</selectionWeight>
+    <displayCategory>BTEMy_Tailbinder</displayCategory>
+    <displayOrderInCategory>-2</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>Gives reverence supply.</li>
+    </customEffectDescriptions>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>god</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <statOffsets>
+      <PsychicSensitivity>0.5</PsychicSensitivity>
+    </statOffsets>
+    <minAgeActive>3</minAgeActive>
+    <resourceLossPerDay>0.04</resourceLossPerDay>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+  <GeneDef ParentName="GeneTailBase">
+    <defName>BTEMy_MultiFoxTail</defName>
+    <label>multi fox tails</label>
+    <description>Carriers of this gene grow multiple fox tails. They're very fluffy. </description>
+    <iconPath>Genes/Icons/BTEMy_MultiFoxTailIcon</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>7</displayOrderInCategory>
+    <displayCategory>BTEMy_Tailbinder</displayCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/MultiFoxTail/MultiFoxTail</graphicPath>
+      <colorType>Hair</colorType>
+      <drawOffsetNorth>(0.1, 0.2, -0.25)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.11, -0.25)</drawOffsetSouth>
+      <drawOffsetEast>(-0.5, -0.11, -0.15)</drawOffsetEast>
+    </graphicData>
+    <statOffsets>
+      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+    </statOffsets>
+	
+   </GeneDef>
+  <GeneDef>
+    <defName>BTEMy_ReverenceGreed</defName>
+    <label>reverence greed</label>
+    <description>Carriers of this gene strongly demand high reverence at all times. At least 75% of their maximum must be sustained.</description>
+    <prerequisite>BTEMy_ReveredEmbodiment</prerequisite>
+    <iconPath>Genes/Icons/BTEMy_ReverenceGreedIcon</iconPath>
+    <displayOrderInCategory>8</displayOrderInCategory>
+    <displayCategory>BTEMy_Tailbinder</displayCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>3</biostatMet>
+	
+   </GeneDef>
 </Defs>

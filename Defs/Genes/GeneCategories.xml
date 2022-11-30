@@ -12,5 +12,10 @@
     <label>Biotech Expansion - Mythic - Ashfeather</label>
     <displayPriorityInXenotype>535</displayPriorityInXenotype>
   </GeneCategoryDef>
+    <GeneCategoryDef>
+    <defName>BTEMy_Tailbinder</defName>
+    <label>Biotech Expansion - Mythic - Tailbinder</label>
+    <displayPriorityInXenotype>536</displayPriorityInXenotype>
+  </GeneCategoryDef>
 
 </Defs>

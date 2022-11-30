@@ -13,6 +13,7 @@ namespace BTE_MY
         }
 
         public static GeneDef BTEMy_AurumThirst;
+        public static GeneDef BTEMy_ReveredEmbodiment;
 
     }
 }

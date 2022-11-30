@@ -16,6 +16,7 @@ namespace BTE_MY
 		}
 
 		public static ThingDef BTEMy_AurumFuel;
+		public static ThingDef BTEMy_ReverenceFuel;
 
 
 

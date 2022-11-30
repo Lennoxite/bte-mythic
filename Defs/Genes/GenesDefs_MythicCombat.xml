@@ -121,4 +121,62 @@
     <biostatMet>-2</biostatMet>
     <biostatCpx>1</biostatCpx>
   </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMy_CurseUser</defName>
+    <label>curse user</label>
+    <description>Carriers can create psychic phenomena that disables the target using reverence by violently tinkering with motor and sensory neurons.</description>
+    <iconPath>Genes/Icons/BTEMy_CursePainIcon</iconPath>
+    <displayCategory>BTEMy_Tailbinder</displayCategory>
+    <displayOrderInCategory>4</displayOrderInCategory>
+    <abilities>
+      <li>BTEMy_CursePain</li>
+      <li>BTEMy_CurseSluggish</li>
+    </abilities>
+    <prerequisite>BTEMy_ReveredEmbodiment</prerequisite>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_CursePain</AbilityDef>
+      <AbilityDef>BTEMy_CurseSluggish</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+  </GeneDef>  
+  <GeneDef>
+    <defName>BTEMy_BlessingUser</defName>
+    <label>blessing user</label>
+    <description>Carriers can create psychic phenomena that aids the target using reverence by exciting and modifying the nervous system.</description>
+    <iconPath>Genes/Icons/BTEMy_BlessingInspireIcon</iconPath>
+    <displayCategory>BTEMy_Tailbinder</displayCategory>
+    <displayOrderInCategory>5</displayOrderInCategory>
+    <abilities>
+      <li>BTEMy_BlessingInspire</li>
+      <li>BTEMy_BlessingCelerity</li>
+    </abilities>
+    <prerequisite>BTEMy_ReveredEmbodiment</prerequisite>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_BlessingInspire</AbilityDef>
+      <AbilityDef>BTEMy_BlessingCelerity</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+  </GeneDef>
+  <GeneDef>
+    <defName>BTEMy_Punish</defName>
+    <label>righteous punishment</label>
+    <description>Carriers can use reverence to convert their psychic energy into potent projectiles.</description>
+    <iconPath>Genes/Icons/BTEMy_PunishIcon</iconPath>
+    <displayCategory>BTEMy_Tailbinder</displayCategory>
+    <displayOrderInCategory>6</displayOrderInCategory>
+    <abilities>
+      <li>BTEMy_Punish</li>
+      <li>BTEMy_BrilliantBlast</li>
+    </abilities>
+    <prerequisite>BTEMy_ReveredEmbodiment</prerequisite>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_Punish</AbilityDef>
+      <AbilityDef>BTEMy_BrilliantBlast</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+  </GeneDef>
 </Defs>

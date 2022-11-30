@@ -12,6 +12,18 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </WorkGiverDef>
+  <WorkGiverDef>
+    <defName>BTEMy_Warden_DeliverReverence</defName>
+    <label>deliver reverence</label>
+    <giverClass>BTE_MY.WorkGiver_Warden_DeliverReverence</giverClass>
+    <workType>Warden</workType>
+    <verb>deliver reverence</verb>
+    <gerund>delivering reverence</gerund>
+    <priorityInType>91</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
 
  
 </Defs>

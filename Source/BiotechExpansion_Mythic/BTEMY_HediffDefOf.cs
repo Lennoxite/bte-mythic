@@ -12,6 +12,7 @@ namespace BTE_MY
 		}
 
 		public static HediffDef BTEMy_AurumThirst;
+		public static HediffDef BTEMy_ReveredDesire; 
 	}
 
 }
