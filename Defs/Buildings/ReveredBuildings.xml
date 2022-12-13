@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef ParentName="BuildingBase">
-    <defName>BTEMy_ReveredTotem</defName>
+  <ThingDef ParentName="BuildingBase" Name="BTEMy_SimpleReveredTotem">
+    <defName>BTEMy_SimpleReveredTotem</defName>
     <label>simple revered totem</label>
     <description>Pawns can pray to this totem to slowly generate Revered Motes, which are used by pawns with Revered Embodiment to fuel their psychic abilities. Motes can also be used to restore psyfocus. This totem is relatively simple, and isn't quite as capable of cultivating reverence as other totems.\n\nIMPORTANT: Scan for meditation spots when some are added or removed nearby.</description>
     <thingClass>Building</thingClass>
@@ -34,6 +34,8 @@
     <size>(2,2)</size>
     <building>
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+      <paintable>true</paintable>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
     </building>
     <costList>
       <Steel>50</Steel>
@@ -52,7 +54,7 @@
           <li>Artistic</li>
         </focusTypes>
       </li>
-      <li Class="CompProperties_AssignableToPawn">
+      <li Class="BTE_MY.CompProperties_AssignableToPawnReveredTotem">
         <drawAssignmentOverlay>true</drawAssignmentOverlay>
         <drawUnownedAssignmentOverlay>true</drawUnownedAssignmentOverlay>
         <compClass>BTE_MY.CompAssignableToPawn_ReveredTotem</compClass>
@@ -66,5 +68,104 @@
     <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
   </ThingDef>
   
+  <ThingDef ParentName="BTEMy_SimpleReveredTotem">
+    <defName>BTEMy_WrathfulTotem</defName>
+    <label>wrathful totem</label>
+    <description>Pawns can pray to this totem to slowly generate Revered Motes, which are used by pawns with Revered Embodiment to fuel their psychic abilities. Motes can also be used to restore psyfocus. This totem is covered in sacrificed blood, increasing max reverence by 50 and granting the ability "Curse of Death."\n\nIMPORTANT: Scan for meditation spots when some are added or removed nearby.</description>
+    <graphicData>
+      <texPath>Things/Buildings/WrathfulTotem/WrathfulTotem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(1.5,0.75,0.75)</volume>
+        <offset>(0,0,-0.5)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <Gold>100</Gold>
+	  <HemogenPack>10</HemogenPack>
+    </costList>
+    <comps Inherit="false">
+      <li Class="BTE_MY.CompProperties_CreateReveredMote">
+        <spawnedThing>BTEMy_ReverenceFuel</spawnedThing>
+      </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+          <li>Dignified</li>
+          <li>Natural</li>
+          <li>Artistic</li>
+        </focusTypes>
+      </li>
+      <li Class="BTE_MY.CompProperties_AssignableToPawnReveredTotem">
+        <drawAssignmentOverlay>true</drawAssignmentOverlay>
+        <drawUnownedAssignmentOverlay>true</drawUnownedAssignmentOverlay>
+        <compClass>BTE_MY.CompAssignableToPawn_ReveredTotem</compClass>
+		<abilities>
+		<li>BTEMy_CurseDeath</li>
+		</abilities>
+		<maxRevOffset>0.5</maxRevOffset>
+      </li>
+    </comps>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_CurseDeath</AbilityDef>
+    </descriptionHyperlinks>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+  </ThingDef>
+    
+  <ThingDef ParentName="BTEMy_SimpleReveredTotem">
+    <defName>BTEMy_LifeFilledTotem</defName>
+    <label>life filled totem</label>
+    <description>Pawns can pray to this totem to slowly generate Revered Motes, which are used by pawns with Revered Embodiment to fuel their psychic abilities. Motes can also be used to restore psyfocus. This totem is is bound in rich cloth and plants, increasing max reverence by 50 and granting the ability "Blessing of Life."\n\nIMPORTANT: Scan for meditation spots when some are added or removed nearby.</description>
+    <graphicData>
+      <texPath>Things/Buildings/LifeFilledTotem/LifeFilledTotem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(1.5,0.75,0.75)</volume>
+        <offset>(0,0,-0.5)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <Gold>100</Gold>
+	  <DevilstrandCloth>50</DevilstrandCloth>
+    </costList>
+    <comps Inherit="false">
+      <li Class="BTE_MY.CompProperties_CreateReveredMote">
+        <spawnedThing>BTEMy_ReverenceFuel</spawnedThing>
+      </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+          <li>Dignified</li>
+          <li>Natural</li>
+          <li>Artistic</li>
+        </focusTypes>
+      </li>
+      <li Class="BTE_MY.CompProperties_AssignableToPawnReveredTotem">
+        <drawAssignmentOverlay>true</drawAssignmentOverlay>
+        <drawUnownedAssignmentOverlay>true</drawUnownedAssignmentOverlay>
+        <compClass>BTE_MY.CompAssignableToPawn_ReveredTotem</compClass>
+		<abilities>
+		<li>BTEMy_BlessingLife</li>
+		</abilities>
+		<maxRevOffset>0.5</maxRevOffset>
+      </li>
+    </comps>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMy_BlessingLife</AbilityDef>
+    </descriptionHyperlinks>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+  </ThingDef>
 
 </Defs>

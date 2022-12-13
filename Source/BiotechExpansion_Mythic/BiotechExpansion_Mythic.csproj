@@ -72,7 +72,10 @@
     <Compile Include="CompProperties_AbilityAurumCost.cs" />
     <Compile Include="CompProperties_AbilityPurgeMemory.cs" />
     <Compile Include="CompProperties_AbilityReverenceCost.cs" />
+    <Compile Include="CompProperties_AssignableToPawnReveredTotem.cs" />
     <Compile Include="CompProperties_CreateReveredMote.cs" />
+    <Compile Include="CompProperties_UseEffectOffsetAurumLevel.cs" />
+    <Compile Include="CompUseEffect_OffsetAurumLevel.cs" />
     <Compile Include="GeneGizmo_ResourceAurum.cs" />
     <Compile Include="GeneGizmo_ResourceReverence.cs" />
     <Compile Include="Gene_Aurum.cs" />
@@ -97,6 +100,8 @@
     <Compile Include="ThoughtWorker_ReverenceGreed.cs" />
     <Compile Include="ThoughtWorker_ShrineWanted.cs" />
     <Compile Include="Thought_MemoryPurged.cs" />
+    <Compile Include="Workgiver_AdministerAurum.cs" />
+    <Compile Include="Workgiver_AdministerReverence.cs" />
     <Compile Include="WorkGiver_Warden_DeliverAurum.cs" />
     <Compile Include="WorkGiver_Warden_DeliverReverence.cs" />
   </ItemGroup>

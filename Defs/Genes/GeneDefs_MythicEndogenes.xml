@@ -360,7 +360,7 @@
   <GeneDef>
     <defName>BTEMy_ReveredEmbodiment</defName>
     <label>revered embodiment</label>
-    <description>Carriers of this gene have their consciousness partially displaced from their brain, forming a psychically maintained out of body nervous system. This grants the carrier extreme psychic abilities at the cost of making them dependent on feeding on the psychic patterns of other people, often through worship and voluntary (or not) offerings of psychic energy. These energies can be harvested from people meditating near a revered totem and condensed into revered motes.\n\nOne meditating person can generate a revered mote every 8 hours.</description>
+    <description>Carriers of this gene have their consciousness partially displaced from their brain, forming a psychically maintained out of body nervous system. This grants the carrier extreme psychic abilities at the cost of making them dependent on feeding on the psychic patterns of other people, often through worship and voluntary (or not) offerings of psychic energy. These energies can be harvested from people meditating near a revered totem and condensed into revered motes.\n\nOne meditating person can generate a revered mote every 8 hours, while a religious ritual can fully restore it with the Regenerate Reverence outcome.</description>
     <geneClass>BTE_MY.Gene_Reverence</geneClass>
     <resourceGizmoType>BTE_MY.GeneGizmo_ResourceReverence</resourceGizmoType>
     <resourceLabel>reverence</resourceLabel>

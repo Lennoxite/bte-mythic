@@ -244,6 +244,46 @@
     </comps>
   </AbilityDef>
   <AbilityDef>
+   <defName>BTEMy_BlessingLife</defName>
+    <label>blessing of life</label>
+    <description>Imbue a target with a boost in wakefulness and work speed, and reduce their mental break threshold.</description>
+	<charges>2</charges>
+    <iconPath>Abilities/BlessingLife</iconPath>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <displayOrder>700</displayOrder>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>15</range>
+      <warmupTime>2</warmupTime>
+      <soundCast>FireSpew_Resolve</soundCast>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>false</canTargetCorpses>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BTE_MY.CompProperties_AbilityReverenceCost">
+        <reverenceCost>0.5</reverenceCost>
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <severity>1</severity>
+        <hediffDef>BTEMy_BlessingLife</hediffDef>
+		<compClass>CompAbilityEffect_GiveHediff</compClass>
+		<onlyBrain>false</onlyBrain>
+		<replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+  <AbilityDef>
    <defName>BTEMy_BlessingInspire</defName>
     <label>blessing of inspiration</label>
     <description>Imbue a target with a random inspiration.</description>
@@ -307,6 +347,44 @@
       <li Class="CompProperties_AbilityGiveHediff">
         <severity>1</severity>
         <hediffDef>BTEMy_CursePain</hediffDef>
+		<compClass>CompAbilityEffect_GiveHediff</compClass>
+		<onlyBrain>false</onlyBrain>
+		<replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+    <AbilityDef>
+   <defName>BTEMy_CurseDeath</defName>
+    <label>curse of death</label>
+    <description>Force a target to experience significantly more pain and damage, reduce their dodge ability, and negate their ability to heal their wounds.</description>
+    <iconPath>Abilities/CurseDeath</iconPath>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <displayOrder>700</displayOrder>
+    <hostile>true</hostile>
+	<charges>2</charges>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>15</range>
+      <warmupTime>2</warmupTime>
+      <soundCast>FireSpew_Resolve</soundCast>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>false</canTargetCorpses>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BTE_MY.CompProperties_AbilityReverenceCost">
+        <reverenceCost>0.5</reverenceCost>
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <severity>1</severity>
+        <hediffDef>BTEMy_CurseDeath</hediffDef>
 		<compClass>CompAbilityEffect_GiveHediff</compClass>
 		<onlyBrain>false</onlyBrain>
 		<replaceExisting>true</replaceExisting>

@@ -31,7 +31,7 @@
       <DeteriorationRate>5</DeteriorationRate>
       <Mass>0.50</Mass>
       <Flammability>0.7</Flammability>
-      <Nutrition>0.1</Nutrition>
+      <Nutrition>0.01</Nutrition>
       <Beauty>0</Beauty>
       <MarketValue>5</MarketValue>
     </statBases>
@@ -41,7 +41,7 @@
     <ingestible>
       <foodType>Processed</foodType>
       <preferability>DesperateOnly</preferability>
-      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
       <specialThoughtDirect>BTEMy_IngestedAurumMaterial</specialThoughtDirect>
       <ingestSound>HemogenPack_Consume</ingestSound>
@@ -130,6 +130,43 @@
     <displayPriority>0</displayPriority>
   </RecipeDef>
   
+  <ThingDef ParentName="ResourceBase">
+    <defName>BTEMy_AurumIdol</defName>
+    <label>aurum idol</label>
+    <description>A delicately made idol that glimmers with several precious metals and gemstones pulsing with an active current of energy. If ingested by a pawn with an active aurum system, their aurum system will become slightly more efficient, allowing a greater maximum amount of aurum to be held at once.</description>
+    <stackLimit>10</stackLimit>
+    <graphicData>
+      <texPath>Things/Food/AurumIdol/AurumIdol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>1000</MarketValue>
+      <DeteriorationRate>5</DeteriorationRate>
+      <Mass>0.50</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Usable">
+        <useJob>UseArtifact</useJob>
+        <useLabel>Ingest {0_label}</useLabel>
+      </li>
+      <li Class="BTE_MY.CompProperties_UseEffectOffsetAurumLevel">
+        <offset>1</offset>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>DeathrestCapacitySerum_Consume</soundOnUsed>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
   
 <!--Reverence-->
   <ThingDef>
@@ -159,7 +196,7 @@
     <statBases>
       <MaxHitPoints>60</MaxHitPoints>
       <DeteriorationRate>5</DeteriorationRate>
-      <Mass>0.50</Mass>
+      <Mass>0.05</Mass>
       <Flammability>0.7</Flammability>
       <Nutrition>0.01</Nutrition>
       <Beauty>0</Beauty>
@@ -171,7 +208,7 @@
     <ingestible>
       <foodType>Processed</foodType>
       <preferability>DesperateOnly</preferability>
-      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
       <ingestSound>HemogenPack_Consume</ingestSound>
       <outcomeDoers>

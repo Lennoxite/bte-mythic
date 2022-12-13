@@ -53,12 +53,21 @@ namespace BTE_MY
 				//Log.Message("Spot Seen");
 				if (c == null)
 					continue;
+				if (c.Map == null)
+					continue;
+				if (c.Position == null)
+					continue;
 
 				//Log.Message("Spot Found");
 				Pawn p = GridsUtility.GetFirstPawn(c.Position, c.Map);
-
+				if (p == null)
+					continue;
+				if (p.jobs == null)
+					continue;
+				if (p.jobs.curJob == null)
+					continue;
 				//Log.Message("Pawn Test");
-				if (p != null && (p.jobs.curJob.def == JobDefOf.Meditate || p.jobs.curJob.def == JobDefOf.MeditatePray))
+				if ((p.jobs.curJob.def == JobDefOf.Meditate || p.jobs.curJob.def == JobDefOf.MeditatePray))
 				{
 					//Log.Message("Pawn Found");
 					this.AddProgress((1f / 80f));

@@ -189,6 +189,36 @@
     </comps>
   </HediffDef>
   
+    <HediffDef>
+    <defName>BTEMy_BlessingLife</defName>
+    <label>blessing of life</label>
+    <description>Blessed with vitality and vigor.</description>
+    <defaultLabelColor>(0.8, 0.8, 0.5)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>blessed</label>
+		  <statOffsets>
+			<MentalBreakThreshold>-0.2</MentalBreakThreshold>
+			<RestFallRateFactor>-0.25</RestFallRateFactor>
+			<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+		  </statOffsets>
+<!--         <statFactors>
+          <PawnTrapSpringChance>0</PawnTrapSpringChance>
+        </statFactors> -->
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+  
   <HediffDef>
     <defName>BTEMy_CurseSluggish</defName>
     <label>curse of sluggishness</label>
@@ -241,6 +271,36 @@
 		  <statOffsets>
 			<IncomingDamageFactor>0.25</IncomingDamageFactor>
 		  </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>BTEMy_CurseDeath</defName>
+    <label>curse of death</label>
+    <description>Cursed with total destruction.</description>
+    <defaultLabelColor>(0.5, 0, 0.5)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>cursed</label>
+		 <painFactor>2</painFactor>
+		  <statOffsets>
+			<IncomingDamageFactor>0.5</IncomingDamageFactor>
+			<MeleeDodgeChance>-20</MeleeDodgeChance>
+		  </statOffsets>
+        <statFactors>
+		<InjuryHealingFactor>0</InjuryHealingFactor>
+        </statFactors>
       </li>
     </stages>
     <comps>

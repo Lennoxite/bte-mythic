@@ -21,6 +21,20 @@ namespace BTE_MY
 			}
 		}
 
+		public override string ResourceLabel
+		{
+			get
+			{
+				if (cachedAurumLabel == null)
+                {
+					cachedAurumLabel = this.def.resourceLabel + " (Level: " + aurumLevel.ToString() + ")";
+
+				}
+				return cachedAurumLabel;
+			}
+		}
+
+
 		public Pawn Pawn
 		{
 			get
@@ -142,9 +156,21 @@ namespace BTE_MY
 		{
 			base.ExposeData();
 			Scribe_Values.Look<bool>(ref this.aurumFuelAllowed, "aurumFuelAllowed", true, false);
+			Scribe_Values.Look<float>(ref this.aurumLevel, "aurumLevel", 0, false);
 		}
 
+		public void OffsetAurumLevel(int offset)
+        {
+			aurumLevel += offset;
+			this.SetMax(1 + aurumLevel/10f);
+			cachedAurumLabel = null;
+        }
+
 		public bool aurumFuelAllowed = true;
+
+		public float aurumLevel = 0;
+
+		private string cachedAurumLabel = null;
 	}
 
 }

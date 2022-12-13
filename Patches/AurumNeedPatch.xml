@@ -18,6 +18,17 @@
             <li Class="BTE_MY.JobGiver_GetReverence" MayRequire="Ludeon.RimWorld.Biotech"/>
 	  </value>
 	  </li>
+	  <li Class="PatchOperationAdd">
+	  <xpath>Defs/TraderKindDef[defName="Caravan_Neolithic_ShamanMerchant"]/stockGenerators</xpath>
+	  <value>
+
+
+		  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+			<thingDef>BTEMy_AurumIdol</thingDef>
+			<countRange>0~1</countRange>
+		  </li>
+	  </value>
+	  </li>
 <!-- 	  <li Class="PatchOperationInsert">
 	  <xpath>Defs/ThingDef[defName="Human"]/recipes/li[6]</xpath>
 	  <value>
