@@ -10,7 +10,7 @@ namespace BTE_MY
 	{
 		protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
 		{
-			ReverenceUtility.OffsetReverenceWithModifier(pawn, this.offset);
+			ReverenceUtility.OffsetReverenceWithModifier(pawn, this.offset * (float)ingested.stackCount);
 		}
 
 		public override IEnumerable<StatDrawEntry> SpecialDisplayStats(ThingDef parentDef)
