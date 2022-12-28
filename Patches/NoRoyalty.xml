@@ -10,7 +10,33 @@
 	<nomatch Class="PatchOperationSequence">
 	  <operations>
 		<li Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="BTEMy_ReveredTotem"]/comps</xpath>
+			<xpath>Defs/ThingDef[defName="BTEMy_WrathfulTotem"]/comps</xpath>
+			<value>
+			  <li Class="CompProperties_Spawner">
+				<requiresPower>false</requiresPower>
+				<thingToSpawn>BTEMy_ReverenceFuel</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange><min>30000</min><max>30000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			  </li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="BTEMy_SimpleReveredTotem"]/comps</xpath>
+			<value>
+			  <li Class="CompProperties_Spawner">
+				<requiresPower>false</requiresPower>
+				<thingToSpawn>BTEMy_ReverenceFuel</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange><min>30000</min><max>30000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			  </li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="BTEMy_LifeFilledTotem"]/comps</xpath>
 			<value>
 			  <li Class="CompProperties_Spawner">
 				<requiresPower>false</requiresPower>

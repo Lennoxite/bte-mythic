@@ -276,8 +276,8 @@
       <li Class="CompProperties_Forbiddable"/>
     </comps>
   </ThingDef>  
-  <RecipeDef>
-    <defName MayRequire="Ludeon.RimWorld.Royalty">BTEMy_FormPsylinkerFromReverence</defName>
+  <RecipeDef MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>BTEMy_FormPsylinkerFromReverence</defName>
     <label>compress revered motes into a psylinker</label>
     <description>Compress revered motes into a psylinker.</description>
     <jobString>Compressing revered motes.</jobString>
