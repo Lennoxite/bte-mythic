@@ -1,4 +1,0 @@
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\bte-mythic\Assemblies\BiotechExpansion_Mythic.dll
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\bte-mythic\Source\BiotechExpansion_Mythic\obj\Debug\BiotechExpansion_Mythic.csprojAssemblyReference.cache
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\bte-mythic\Source\BiotechExpansion_Mythic\obj\Debug\BiotechExpansion_Mythic.csproj.CoreCompileInputs.cache
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\bte-mythic\Source\BiotechExpansion_Mythic\obj\Debug\BiotechExpansion_Mythic.dll
