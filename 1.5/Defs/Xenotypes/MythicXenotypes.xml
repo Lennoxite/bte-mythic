@@ -11,11 +11,12 @@
     <displayPriority>-1001</displayPriority>
     <genes>
       <li>BTEMy_AurumThirst</li>
-      <li>BTEMy_DraconicNose</li>
+      <li>BTEMy_DraconicHead</li>
       <li>BTEMy_DraconicTail</li>
       <li>BTEMy_DraconicHorns</li>
       <li>BTEMy_DraconicWings</li>
       <li>BTEMy_BlazingClaws</li>
+      <li>Beard_NoBeardOnly</li>
       <li>FireResistant</li>
       <li>Ageless</li>
       <li>Hair_BrightRed</li>
@@ -78,7 +79,7 @@
 	  <li>AptitudeTerrible_Melee</li>
 	  <li>AptitudeTerrible_Shooting</li>
 	  <li>AptitudeTerrible_Mining</li>
-	  <li>Furskin</li>
+	  <li>BTE_BeardlessFurskin</li>
 	  <li>Mood_Optimist</li>
       <li>Pain_Extra</li>
       <li>AptitudeRemarkable_Medicine</li>
@@ -102,22 +103,23 @@
       <li>TotalHealing</li>
       <li>DarkVision</li>
 	  <li>BTEMa_SensitiveWhiskers</li>
-      <li>BTEMa_Nose_Lupine</li> 
       <li>BTEMa_SharpClaws</li>
 	  <li>BTEMa_RabbitsIntuition</li>
       <li>Hair_SandyBlonde</li>
       <li>BTEMy_ReveredEmbodiment</li>
       <li>BTEMy_CurseUser</li>
+      <li>BTEMy_FluffyFoxHead</li>
       <li>BTEMy_BlessingUser</li>
       <li>BTEMy_Punish</li>
       <li>BTEMa_VulpineEars</li>
+      <li>Beard_NoBeardOnly</li>
       <li>AptitudeStrong_Plants</li>
       <li>AptitudeStrong_Animals</li>
       <li>AptitudeStrong_Artistic</li>
       <li>AptitudePoor_Melee</li>
       <li>BTEMy_MultiFoxTail</li>
       <li>BTEMy_ReverenceGreed</li>
-      <li>Furskin</li>
+      <li>BTE_BeardlessFurskin</li>
       <li>PsychicAbility_Enhanced</li>
 	  <li>Delicate</li>
       <li>Pain_Extra</li>

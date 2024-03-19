@@ -155,16 +155,16 @@
             <layer>80</layer>
           </defaultData>
           <dataEast>
-		  <offset>(0, 0, -0.1)</offset>
+		  <offset>(0.1, 0, 0)</offset>
           </dataEast>
           <dataWest>
-		  <offset>(0, 0, -0.1)</offset>
+		  <offset>(-0.1, 0, 0)</offset>
           </dataWest>
           <dataSouth>
-		  <offset>(0, -0.2, -0.1)</offset>
+		  <offset>(0, -0.2, 0)</offset>
           </dataSouth>
           <dataNorth>
-		  <offset>(0, 1, -0.1)</offset>
+		  <offset>(0, 1, 0)</offset>
             <layer>80</layer>
           </dataNorth>
         </drawData>
@@ -309,6 +309,25 @@
     </renderNodeProperties>
     <biostatMet>-2</biostatMet>
     <biostatCpx>2</biostatCpx>
+  </GeneDef>
+  
+
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BTEMy_DraconicHead</defName>
+    <label>draconic head</label>
+    <description>Carriers of this gene have a fearsome reptilian head.</description>
+    <iconPath>Genes/Icons/BTEMy_DraconicHeadIcon</iconPath>
+    <forcedHeadTypes>
+      <li>BTEMy_DraconicHead</li>
+    </forcedHeadTypes>
+    <displayCategory>BTEMy_Glintscale</displayCategory>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>draconic</symbol></li>
+        <li><symbol>serpentine</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
   </GeneDef>
   
 <!--ASHFEATHER-->
@@ -652,4 +671,51 @@
     <biostatMet>3</biostatMet>
 	
    </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BTEMy_FluffyFoxHead</defName>
+    <label>fluffy fox head</label>
+    <description>Carriers of this gene have a mystical (and very fluffy) fox head. Comes with complementary mystic markings! (Ears sold separately.)</description>
+    <iconPath>Genes/Icons/BTEMy_FluffyFoxHeadIcon</iconPath>
+    <forcedHeadTypes>
+      <li>BTEMy_FluffyFoxHead</li>
+    </forcedHeadTypes>
+    <displayCategory>BTEMy_Tailbinder</displayCategory>
+    <displayOrderInCategory>9</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>vulpine</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <color>(1, 1, 1)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/Heads/Genes/FluffyFoxHeadMarks/FluffyFoxHeadMarks</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>55</layer>
+          </defaultData>
+          <dataEast>
+		  <offset>(0, 0, 0)</offset>
+          </dataEast>
+          <dataWest>
+		  <offset>(0, 0, 0)</offset>
+          </dataWest>
+          <dataSouth>
+		  <offset>(0, 0, 0)</offset>
+          </dataSouth>
+          <dataNorth>
+		  <offset>(0, 0, 0)</offset>
+            <layer>6</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
 </Defs>
