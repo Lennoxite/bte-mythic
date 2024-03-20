@@ -32,6 +32,28 @@
     <resourceLossPerDay>0.02</resourceLossPerDay>
     <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BTE.PawnRenderNodeWorker_FlipWhenCrawlingOnlyDrafted</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <!-- <colorType>Skin</colorType> -->
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/AurumicFlare/AurumicFlare</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>2</layer>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
   </GeneDef>
   <GeneDef ParentName="GeneNoseBase">
     <defName>BTEMy_DraconicNose</defName>
@@ -161,10 +183,9 @@
 		  <offset>(-0.1, 0, 0)</offset>
           </dataWest>
           <dataSouth>
-		  <offset>(0, -0.2, 0)</offset>
+            <layer>3</layer>
           </dataSouth>
           <dataNorth>
-		  <offset>(0, 1, 0)</offset>
             <layer>80</layer>
           </dataNorth>
         </drawData>
@@ -635,7 +656,27 @@
     <resourceLossPerDay>0.04</resourceLossPerDay>
     <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BTE.PawnRenderNodeWorker_FlipWhenCrawlingOnlyDrafted</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <!-- <colorType>Skin</colorType> -->
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/ReveredFlare/ReveredFlare</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
   </GeneDef>
+  
   <GeneDef ParentName="GeneTailBase">
     <defName>BTEMy_MultiFoxTail</defName>
     <label>multi fox tails</label>
