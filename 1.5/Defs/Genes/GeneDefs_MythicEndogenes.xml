@@ -579,6 +579,27 @@
     <biostatMet>0</biostatMet>
   </GeneDef>
   
+ 
+
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BTEMy_PhoenixHead</defName>
+    <label>phoenix head</label>
+    <description>Carriers of this gene have a sleek phoenix head.</description>
+    <iconPath>Genes/Icons/BTEMy_PhoenixHeadIcon</iconPath>
+    <forcedHeadTypes>
+      <li>BTEMy_PhoenixHead</li>
+    </forcedHeadTypes>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <displayOrderInCategory>9</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>avi</symbol></li>
+        <li><symbol>bird</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  
 <!--TAILBINDER-->
   <GeneDef>
     <defName>BTEMy_ReveredEmbodiment</defName>

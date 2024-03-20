@@ -11,6 +11,17 @@
     </requiredGenes>
     <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
   </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BTEMy_PhoenixHead</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Genes/PhoenixHead/PhoenixHead</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>BTEMy_PhoenixHead</li>
+    </requiredGenes>
+    <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+  </HeadTypeDef>
+  
   
   <HeadTypeDef ParentName="AverageBase">
     <defName>BTEMy_FluffyFoxHead</defName>

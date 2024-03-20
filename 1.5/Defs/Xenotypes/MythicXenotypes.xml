@@ -57,7 +57,7 @@
     <displayPriority>-1002</displayPriority>
     <genes>
       <li>BTEMy_AurumThirst</li>
-      <li>BTEMy_PhoenixNose</li>
+      <li>BTEMy_PhoenixHead</li>
       <li>BTEMy_PhoenixTail</li>
       <li>BTEMy_PhoenixCrest</li>
       <li>BTEMy_PhoenixWings</li>
@@ -72,6 +72,7 @@
       <li>Hair_BaldOnly</li>
       <li>KindInstinct</li>
       <li>TotalHealing</li>
+      <li>Beard_NoBeardOnly</li>
       <li>FireSpew</li>
 	  <li>Immunity_Weak</li>
       <li>PsychicAbility_Enhanced</li>
@@ -93,6 +94,7 @@
   <XenotypeDef MayRequire="biotexpans.mammalia">
     <defName>Tailbinder</defName>
     <label>tailbinder</label>
+    <combatPowerFactor>7</combatPowerFactor>
     <description>A strange fox-like xenotype with multiple tails, the tailbinder is a creature whose consciousness is partially separate from their physical bodies. This grants them immense psychic powers, but they rely on the psychic energy of others to survive. This energy is cultivated primarily through voluntary worship, as a result this xenotype is often treated as a god. Tailbinders are attuned to the natural world, and are capable of delivering blessings and curses to those they deem fit. Their physical bodies are weakened as a result of their reliance on psychic power, however.</description>
     <descriptionShort>Tailbinders are attuned to the natural world, and are capable of delivering blessings and curses to those they deem fit. Their physical bodies are weaked as a result of their reliance on psychic power.</descriptionShort>
     <iconPath>UI/Xenotypes/Tailbinder</iconPath>
