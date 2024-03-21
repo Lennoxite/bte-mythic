@@ -621,6 +621,72 @@
   </GeneDef>
   
   
+	<GeneDef>
+	<defName>BTEMy_GoldenFlare</defName>
+	<label>golden flare</label>
+	<description>Carriers of this gene manifest a golden halo while in combat.</description>
+	<iconPath>Genes/Icons/BTEMy_GoldenFlareIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BTE.PawnRenderNodeWorker_FlipWhenCrawlingOnlyDrafted</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <!-- <colorType>Skin</colorType> -->
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/GoldenFlare/GoldenFlare</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>2</layer>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <displayOrderInCategory>10</displayOrderInCategory>
+
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+	<GeneDef>
+	<defName>BTEMy_PrismaticFlare</defName>
+	<label>prismatic flare</label>
+	<description>Carriers of this gene manifest an aquamarine halo while in combat.</description>
+	<iconPath>Genes/Icons/BTEMy_PrismaticFlareIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BTE.PawnRenderNodeWorker_FlipWhenCrawlingOnlyDrafted</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <!-- <colorType>Skin</colorType> -->
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/PrismaticFlare/PrismaticFlare</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>2</layer>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>BTEMy_Ashfeather</displayCategory>
+    <displayOrderInCategory>11</displayOrderInCategory>
+
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
 <!--TAILBINDER-->
   <GeneDef>
     <defName>BTEMy_ReveredEmbodiment</defName>
