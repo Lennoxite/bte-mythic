@@ -35,14 +35,21 @@
 	<renderNodeProperties>
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>BTE.PawnRenderNodeWorker_FlipWhenCrawlingOnlyDrafted</workerClass>
+        <workerClass>BTE.PawnRenderNodeWorker_OnlyDraftedPulsing</workerClass>
         <parentTagDef>Head</parentTagDef>
         <!-- <colorType>Skin</colorType> -->
 		<color>(255, 255, 255)</color>
         <useRottenColor>true</useRottenColor>
         <useSkinShader>true</useSkinShader>
         <rotDrawMode>Fresh, Rotting</rotDrawMode>
-        <texPath>Things/Pawn/Humanlike/HeadAttachments/AurumicFlare/AurumicFlare</texPath>
+        <!--<texPath>Things/Pawn/Humanlike/HeadAttachments/AurumicFlare/1/AurumicFlare</texPath>-->
+		
+        <texPaths>
+		<li>Things/Pawn/Humanlike/HeadAttachments/AurumicFlare/1/AurumicFlare</li>
+		<li>Things/Pawn/Humanlike/HeadAttachments/AurumicFlare/2/AurumicFlare</li>
+		<li>Things/Pawn/Humanlike/HeadAttachments/AurumicFlare/3/AurumicFlare</li>
+		
+		</texPaths>
         <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
         <drawData>
           <defaultData>
@@ -629,7 +636,7 @@
 	<renderNodeProperties>
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>BTE.PawnRenderNodeWorker_FlipWhenCrawlingOnlyDrafted</workerClass>
+        <workerClass>BTE.PawnRenderNodeWorker_OnlyDraftedPulsing</workerClass>
         <parentTagDef>Head</parentTagDef>
         <!-- <colorType>Skin</colorType> -->
 		<color>(255, 255, 255)</color>
@@ -662,7 +669,7 @@
 	<renderNodeProperties>
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>BTE.PawnRenderNodeWorker_FlipWhenCrawlingOnlyDrafted</workerClass>
+        <workerClass>BTE.PawnRenderNodeWorker_OnlyDraftedPulsing</workerClass>
         <parentTagDef>Head</parentTagDef>
         <!-- <colorType>Skin</colorType> -->
 		<color>(255, 255, 255)</color>
@@ -725,7 +732,7 @@
 	<renderNodeProperties>
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>BTE.PawnRenderNodeWorker_FlipWhenCrawlingOnlyDrafted</workerClass>
+        <workerClass>BTE.PawnRenderNodeWorker_OnlyDraftedPulsing</workerClass>
         <parentTagDef>Head</parentTagDef>
         <!-- <colorType>Skin</colorType> -->
 		<color>(255, 255, 255)</color>
