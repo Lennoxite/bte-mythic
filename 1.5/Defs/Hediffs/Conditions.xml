@@ -187,6 +187,28 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BTE.PawnRenderNodeWorker_Pulsing</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <!-- <colorType>Skin</colorType> -->
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BlessingCelerity/BlessingCelerity</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>90</layer>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
   </HediffDef>
   
     <HediffDef>
@@ -217,6 +239,28 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BTE.PawnRenderNodeWorker_Pulsing</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <!-- <colorType>Skin</colorType> -->
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BlessingLife/BlessingLife</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>90</layer>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
   </HediffDef>
   
   <HediffDef>
@@ -253,13 +297,35 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BTE.PawnRenderNodeWorker_Pulsing</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <!-- <colorType>Skin</colorType> -->
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CurseSluggish/CurseSluggish</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>90</layer>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
   </HediffDef>
   
   <HediffDef>
     <defName>BTEMy_CursePain</defName>
     <label>curse of pain</label>
     <description>Cursed with increased pain and damage.</description>
-    <defaultLabelColor>(0.5, 0, 0)</defaultLabelColor>
+    <defaultLabelColor>(0.7, 0.2, 0.2)</defaultLabelColor>
     <initialSeverity>1</initialSeverity>
     <maxSeverity>1</maxSeverity>
     <hediffClass>HediffWithComps</hediffClass>
@@ -279,13 +345,35 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BTE.PawnRenderNodeWorker_Pulsing</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <!-- <colorType>Skin</colorType> -->
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CursePain/CursePain</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>90</layer>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
   </HediffDef>
   
   <HediffDef>
     <defName>BTEMy_CurseDeath</defName>
     <label>curse of death</label>
     <description>Cursed with total destruction.</description>
-    <defaultLabelColor>(0.5, 0, 0.5)</defaultLabelColor>
+    <defaultLabelColor>(0.65, 0, 0.65)</defaultLabelColor>
     <initialSeverity>1</initialSeverity>
     <maxSeverity>1</maxSeverity>
     <hediffClass>HediffWithComps</hediffClass>
@@ -309,6 +397,28 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BTE.PawnRenderNodeWorker_Pulsing</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <!-- <colorType>Skin</colorType> -->
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CurseDeath/CurseDeath</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>90</layer>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
   </HediffDef>
   
   <HediffDef>
