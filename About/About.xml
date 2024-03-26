@@ -26,4 +26,5 @@
 	<description>
 This module of Biotech Expansion focuses on a few complex xenotypes, all bearing immense power from their archite born genetics to manifest the might of mythical beings!
 	</description>
+	<modIconPath IgnoreIfNoMatchingField="True">BiotechExpansionMythicIcon</modIconPath>
 </ModMetaData>
