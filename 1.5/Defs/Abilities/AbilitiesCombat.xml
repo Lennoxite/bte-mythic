@@ -219,7 +219,7 @@
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>true</drawAimPie>
-      <range>15</range>
+      <range>20</range>
       <warmupTime>2</warmupTime>
       <soundCast>FireSpew_Resolve</soundCast>
       <targetParams>
@@ -227,7 +227,7 @@
         <canTargetPawns>true</canTargetPawns>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetCorpses>false</canTargetCorpses>
-        <canTargetMechs>false</canTargetMechs>
+        <canTargetMechs>true</canTargetMechs>
       </targetParams>
     </verbProperties>
     <comps>
@@ -259,7 +259,7 @@
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>true</drawAimPie>
-      <range>15</range>
+      <range>20</range>
       <warmupTime>2</warmupTime>
       <soundCast>FireSpew_Resolve</soundCast>
       <targetParams>
@@ -267,7 +267,7 @@
         <canTargetPawns>true</canTargetPawns>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetCorpses>false</canTargetCorpses>
-        <canTargetMechs>false</canTargetMechs>
+        <canTargetMechs>true</canTargetMechs>
       </targetParams>
     </verbProperties>
     <comps>
@@ -326,10 +326,13 @@
     <displayOrder>700</displayOrder>
     <hostile>true</hostile>
 	<charges>3</charges>
+    <aiCanUse>true</aiCanUse>
+    <ai_SearchAOEForTargets>false</ai_SearchAOEForTargets>
+    <targetRequired>true</targetRequired>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>true</drawAimPie>
-      <range>15</range>
+      <range>20</range>
       <warmupTime>2</warmupTime>
       <soundCast>FireSpew_Resolve</soundCast>
       <targetParams>
@@ -337,7 +340,7 @@
         <canTargetPawns>true</canTargetPawns>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetCorpses>false</canTargetCorpses>
-        <canTargetMechs>false</canTargetMechs>
+        <canTargetMechs>true</canTargetMechs>
       </targetParams>
     </verbProperties>
     <comps>
@@ -364,10 +367,13 @@
     <displayOrder>700</displayOrder>
     <hostile>true</hostile>
 	<charges>2</charges>
+    <aiCanUse>true</aiCanUse>
+    <ai_SearchAOEForTargets>false</ai_SearchAOEForTargets>
+    <targetRequired>true</targetRequired>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>true</drawAimPie>
-      <range>15</range>
+      <range>20</range>
       <warmupTime>2</warmupTime>
       <soundCast>FireSpew_Resolve</soundCast>
       <targetParams>
@@ -375,7 +381,7 @@
         <canTargetPawns>true</canTargetPawns>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetCorpses>false</canTargetCorpses>
-        <canTargetMechs>false</canTargetMechs>
+        <canTargetMechs>true</canTargetMechs>
       </targetParams>
     </verbProperties>
     <comps>
@@ -401,18 +407,21 @@
     <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
     <displayOrder>700</displayOrder>
     <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_SearchAOEForTargets>false</ai_SearchAOEForTargets>
+    <targetRequired>true</targetRequired>
 	<charges>3</charges>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>true</drawAimPie>
-      <range>15</range>
+      <range>20</range>
       <warmupTime>2</warmupTime>
       <soundCast>FireSpew_Resolve</soundCast>
       <targetParams>
         <canTargetPawns>true</canTargetPawns>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetCorpses>false</canTargetCorpses>
-        <canTargetMechs>false</canTargetMechs>
+        <canTargetMechs>true</canTargetMechs>
       </targetParams>
     </verbProperties>
     <comps>
@@ -437,6 +446,8 @@
     <cooldownTicksRange>60</cooldownTicksRange>
     <displayOrder>200</displayOrder>
     <aiCanUse>true</aiCanUse>
+    <ai_SearchAOEForTargets>false</ai_SearchAOEForTargets>
+    <targetRequired>true</targetRequired>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <range>10</range>
@@ -476,6 +487,8 @@
     <cooldownTicksRange>5000</cooldownTicksRange>
     <displayOrder>201</displayOrder>
     <aiCanUse>true</aiCanUse>
+    <ai_SearchAOEForTargets>false</ai_SearchAOEForTargets>
+    <targetRequired>true</targetRequired>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <range>15</range>
