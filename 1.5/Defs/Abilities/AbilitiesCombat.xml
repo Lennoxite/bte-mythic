@@ -75,6 +75,7 @@
     <description>Fly to a nearby location with wings using an injection of aurum.</description>
     <iconPath>Genes/Icons/BTEMy_DraconicWingsIcon</iconPath>
     <cooldownTicksRange>200</cooldownTicksRange>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbilityJump</verbClass>
       <label>jump</label>
@@ -104,6 +105,7 @@
     <description>Make a big leap to a nearby location.</description>
     <iconPath>Genes/Icons/BTEMy_DraconicWingsIcon</iconPath>
     <cooldownTicksRange>7500</cooldownTicksRange>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbilityJump</verbClass>
       <label>jump</label>
@@ -135,6 +137,7 @@
     <warmupEffecter>Coagulate</warmupEffecter>
     <warmupStartSound>FireSpew_Warmup</warmupStartSound>
     <displayOrder>400</displayOrder>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <range>16</range>
@@ -175,6 +178,7 @@
     <cooldownTicksRange>300000</cooldownTicksRange>
     <stunTargetWhileCasting>true</stunTargetWhileCasting>
     <aiCanUse>false</aiCanUse>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>true</drawAimPie>
@@ -215,6 +219,7 @@
     <displayOrder>700</displayOrder>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <hostile>false</hostile>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
@@ -255,6 +260,7 @@
     <displayOrder>700</displayOrder>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <hostile>false</hostile>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
@@ -293,6 +299,7 @@
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>true</drawAimPie>
