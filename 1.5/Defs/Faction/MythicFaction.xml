@@ -22,6 +22,7 @@
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <Glintscale>0.02</Glintscale>
+		<Tailbinder MayRequire="biotexpans.mammalia">0.02</Tailbinder>
         <Ashfeather>0.02</Ashfeather>
         <Hussar>0.10</Hussar>
         <Neanderthal>0.10</Neanderthal>

@@ -7,6 +7,7 @@
     <descriptionShort>Powerful, red hot, and extremely avaricious, the glintscale is a strange, physics defying dragon-like creature, believed to have been altered by archites. They are masters of melee combat, excellent at range combat, and are genetically predisposed towards crafting, to ensure that they can sate their own demand for masterwork and legendary possessions. Their desire for wealth is so great they need to regularly consume gold and silver to power their altered body, and they constantly covet the best of the best.</descriptionShort>
     <iconPath>UI/Xenotypes/Glintscale</iconPath>
     <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
+    <inheritable>true</inheritable>
     <combatPowerFactor>7</combatPowerFactor>
     <displayPriority>-1001</displayPriority>
     <genes>
@@ -53,6 +54,7 @@
     <descriptionShort>Ashfeathers are phoenix like xenohumans, who must consume gold and silver to power their abilities. Their aurum thirst is stabilized however, and it won't passively decrease, but it is also harder for them to gain aurum. They are incredible healers and speakers, and their aurum abilities revolve around healing the mind and body. They are genetically incapable of combat, are vulnerable to damage, and their bodies are somewhat more vulnerable to disease. They possess higher than usual psychic ability, and work well with animals and people alike.</descriptionShort>
     <iconPath>UI/Xenotypes/Ashfeather</iconPath>
     <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
+    <inheritable>true</inheritable>
     <combatPowerFactor>7</combatPowerFactor>
     <displayPriority>-1002</displayPriority>
     <genes>
@@ -98,6 +100,7 @@
     <description>A strange fox-like xenotype with multiple tails, the tailbinder is a creature whose consciousness is partially separate from their physical bodies. This grants them immense psychic powers, but they rely on the psychic energy of others to survive. This energy is cultivated primarily through voluntary worship, as a result this xenotype is often treated as a god. Tailbinders are attuned to the natural world, and are capable of delivering blessings and curses to those they deem fit. Their physical bodies are weakened as a result of their reliance on psychic power, however.</description>
     <descriptionShort>Tailbinders are attuned to the natural world, and are capable of delivering blessings and curses to those they deem fit. Their physical bodies are weaked as a result of their reliance on psychic power.</descriptionShort>
     <iconPath>UI/Xenotypes/Tailbinder</iconPath>
+    <inheritable>true</inheritable>
     <displayPriority>-1003</displayPriority>
     <genes>
       <li>Ageless</li>
