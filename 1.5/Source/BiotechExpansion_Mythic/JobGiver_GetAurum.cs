@@ -97,7 +97,7 @@ namespace BTE_MY
 				if (AurumPack != null)
 				{
 					Job job = JobMaker.MakeJob(JobDefOf.Ingest, AurumPack);
-					job.count = Mathf.Min(AurumPack.stackCount, Mathf.CeilToInt((gene_Aurum.Max - gene_Aurum.Value) / JobGiver_GetAurum.AurumPackAurumGain));
+					job.count = Mathf.Min(AurumPack.stackCount, Mathf.FloorToInt((gene_Aurum.Max - gene_Aurum.Value) / JobGiver_GetAurum.AurumPackAurumGain));
 					return job;
 				}
 			}

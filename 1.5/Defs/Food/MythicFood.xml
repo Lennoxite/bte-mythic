@@ -30,9 +30,9 @@
       <MaxHitPoints>60</MaxHitPoints>
       <DeteriorationRate>5</DeteriorationRate>
       <Mass>0.50</Mass>
-      <Flammability>0.7</Flammability>
+      <Flammability>0</Flammability>
       <Nutrition>0.01</Nutrition>
-      <Beauty>0</Beauty>
+      <Beauty>2</Beauty>
       <MarketValue>5</MarketValue>
     </statBases>
     <thingCategories>
@@ -40,6 +40,8 @@
     </thingCategories>
     <ingestible>
       <foodType>Processed</foodType>
+      <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
       <preferability>DesperateOnly</preferability>
       <maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
@@ -197,9 +199,9 @@
       <MaxHitPoints>60</MaxHitPoints>
       <DeteriorationRate>5</DeteriorationRate>
       <Mass>0.05</Mass>
-      <Flammability>0.7</Flammability>
+      <Flammability>0</Flammability>
       <Nutrition>0.01</Nutrition>
-      <Beauty>0</Beauty>
+      <Beauty>1</Beauty>
       <MarketValue>5</MarketValue>
     </statBases>
     <thingCategories>
@@ -207,6 +209,8 @@
     </thingCategories>
     <ingestible>
       <foodType>Processed</foodType>
+      <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
       <preferability>DesperateOnly</preferability>
       <maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
