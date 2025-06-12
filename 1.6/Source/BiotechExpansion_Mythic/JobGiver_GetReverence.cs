@@ -94,8 +94,8 @@ namespace BTE_MY
 				if (ReverencePack != null)
 				{
 					Job job = JobMaker.MakeJob(JobDefOf.Ingest, ReverencePack);
-					job.count = Mathf.Min(ReverencePack.stackCount, Mathf.Max(Mathf.FloorToInt((gene_Reverence.Max - gene_Reverence.Value) / JobGiver_GetReverence.ReverencePackReverenceGain)), 1);
-					return job;
+                    job.count = Mathf.Max(Mathf.Min(ReverencePack.stackCount, Mathf.FloorToInt((gene_Reverence.Max - gene_Reverence.Value) / JobGiver_GetAurum.AurumPackAurumGain)), 1);
+                    return job;
 				}
 			}
 			return null;
