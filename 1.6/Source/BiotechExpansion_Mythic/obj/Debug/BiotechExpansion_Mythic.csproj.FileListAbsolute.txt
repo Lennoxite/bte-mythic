@@ -13,5 +13,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\bte-mythic\1.5\Assem
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\bte-mythic\1.6\Source\BiotechExpansion_Mythic\obj\Debug\BiotechExpansion_Mythic.csproj.AssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\bte-mythic\1.6\Source\BiotechExpansion_Mythic\obj\Debug\BiotechExpansion_Mythic.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\bte-mythic\1.6\Assemblies\BiotechExpansion_Mythic.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\bte-mythic\1.6\Source\BiotechExpansion_Mythic\obj\Debug\BiotechExpansion_Mythic.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\bte-mythic\1.6\Source\BiotechExpansion_Mythic\obj\Debug\BiotechExpansion_Mythic.dll
