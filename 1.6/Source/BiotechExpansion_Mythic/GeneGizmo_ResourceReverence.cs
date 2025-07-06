@@ -51,7 +51,19 @@ namespace BTE_MY
             return result;
 		}
 
-		protected override void DrawHeader(Rect labelRect, ref bool mouseOverAnyHighlightableElement)
+        private static bool draggingBar;
+        protected override bool DraggingBar
+        {
+            get
+            {
+                return draggingBar;
+            }
+            set
+            {
+                draggingBar = value;
+            }
+        }
+        protected override void DrawHeader(Rect labelRect, ref bool mouseOverAnyHighlightableElement)
 		{
 			Gene_Reverence ReverenceGene;
 			if ((this.gene.pawn.IsColonistPlayerControlled || this.gene.pawn.IsPrisonerOfColony) && (ReverenceGene = (this.gene as Gene_Reverence)) != null)

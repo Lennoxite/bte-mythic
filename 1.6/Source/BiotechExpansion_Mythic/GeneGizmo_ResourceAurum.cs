@@ -15,7 +15,20 @@ namespace BTE_MY
 			
 		}
 
-		public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
+        private static bool draggingBar;
+        protected override bool DraggingBar
+        {
+            get
+            {
+                return draggingBar;
+            }
+            set
+            {
+                draggingBar = value;
+            }
+        }
+
+        public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
 		{
 			GizmoResult result = base.GizmoOnGUI(topLeft, maxWidth, parms);
 			float num = Mathf.Repeat(Time.time, 0.85f);
